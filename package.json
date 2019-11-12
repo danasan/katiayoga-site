@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "katia-yoga",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Danay",
+  "description": "Clases de Yoga en Usurbil, Donostia, San-Sebastian",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.17.6",
@@ -24,7 +24,9 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "Katia", "yoga", "san sebastian", "usurbil", 
+    "españa", "spain", "donostia", "gipuzkoa",
+    "anusara", "hatha", "restorative"
   ],
   "license": "MIT",
   "scripts": {

@@ -1,23 +1,29 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import icon from '../assets/images/logo-nav.png';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Nav from "react-bootstrap/Nav";
+import icon from "../assets/images/logo-nav.png";
+import "../pages/index.js";
+import "../assets/css/main.css";
 
 class Navigation extends React.Component {
     render() {
         return (
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home"><img src={icon} alt="Logo"/></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#home">Sobre Mi</Nav.Link>
-                        <Nav.Link href="#link">Clases</Nav.Link>
-                        <Nav.Link href="#link">Contactar</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <div className="navigation">
+                <a id="logo" href="#home"> <img src={icon} alt="Logo"></img></a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#about">Sobre mi</a>
+                        </li>
+                        <li>
+                            <a href="#classes">Clases</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contactar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         )
     }
 }

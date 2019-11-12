@@ -19,6 +19,10 @@ class IndexPage extends React.Component {
         <Helmet title={siteTitle} />
 
         <section id="styles" className="yoga-styles">
+          <h5 class="hero-subtitle">
+            Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing!
+          </h5>
+          <hr></hr>
           <CardDeck>
             <Card>
               <Card.Img variant="top" src={hatha} />
