@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Nav from "react-bootstrap/Nav";
 import icon from "../assets/images/logo-nav.png";
 import "../pages/index.js";
 import "../assets/css/main.css";
@@ -13,13 +12,13 @@ class Navigation extends React.Component {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#about">Sobre mi</a>
+                            <a className="anchor" href="#about">Sobre mi</a>
                         </li>
                         <li>
-                            <a href="#classes">Clases</a>
+                            <a className="anchor" href="#classes">Clases</a>
                         </li>
                         <li>
-                            <a href="#contact">Contactar</a>
+                            <a className="anchor" href="#contact">Contactar</a>
                         </li>
                     </ul>
                 </nav>

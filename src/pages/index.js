@@ -9,6 +9,7 @@ import hatha from "../assets/images/hatha.jpeg";
 import anusara from "../assets/images/anusara.jpeg";
 import restorative from "../assets/images/restorative.jpeg";
 import profile from "../assets/images/profile.jpeg";
+import Table from "react-bootstrap/Table";
 
 class IndexPage extends React.Component {
   render() {
@@ -19,65 +20,63 @@ class IndexPage extends React.Component {
         <Helmet title={siteTitle} />
 
         <section id="styles" className="yoga-styles">
-          <h5 class="hero-subtitle">
-            Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing!
-          </h5>
-          <hr></hr>
-          <CardDeck>
+          <div className="styles-header">
+            <h1 class="section-title">
+              Adipiscing a commodo ante nunc accumsan interdum.
+            </h1>
+            <hr className="styles-hr"></hr>
+          </div>
+
+          <CardDeck className="card-deck">
             <Card>
-              <Card.Img variant="top" src={hatha} />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
+              <Card.Img className="card-img" variant="top" src={hatha} />
+              <Card.Body className="card-body">
+                <Card.Title style={{ fontSize: 25, fontWeight: 500 }}>Hatha</Card.Title>
+                <Card.Text style={{ fontSize: 18, fontWeight: 200 }}>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This content is a little bit longer.
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src={anusara} />
+              <Card.Img className="card-img" variant="top" src={anusara} />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
+                <Card.Title style={{ fontSize: 25, fontWeight: 500 }}>Anusara</Card.Title>
+                <Card.Text style={{ fontSize: 18, fontWeight: 200 }}>
                   This card has supporting text below as a natural lead-in to additional
                   content.{' '}
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src={restorative} />
+              <Card.Img className="card-img" variant="top" src={restorative} />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
+                <Card.Title style={{ fontSize: 25, fontWeight: 500 }}>Restorativo</Card.Title>
+                <Card.Text style={{ fontSize: 18, fontWeight: 200 }}>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This card has even longer content than the first to
                   show that equal height action.
               </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
           </CardDeck>
         </section>
 
         <section id="about" className="main style2">
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <img src={profile} alt="Imagen de Perfil" />
-              </div>
-              <div className="col-6">
-                <header className="major">
-                  <h2>Lorem ipsum dolor adipiscing<br />
-                    amet dolor consequat</h2>
-                </header>
+          <div className="row">
+            <div className="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5">
+              <span className="img-container">
+                <img className="img-responsive center-block" src={profile} alt="Imagen de Perfil"
+                  style={{ width: 380, height: 400, paddingRight: 0, float: "center" }} />
+              </span>
+            </div>
+            <div className="col-12 col-sm-12 col-md-6"
+              style={{ paddingLeft: 60, paddingRight: 60, paddingTop: 20 }}>
+              <header className="major" >
+                <h2 class="section-title">Sobre mi</h2>
+                {/* <hr className="about-hr"></hr> */}
+              </header>
+              <div className="about-text" style={{ textAlign: "left" }}>
                 <p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
                 <p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
                 <p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
@@ -87,65 +86,52 @@ class IndexPage extends React.Component {
         </section>
 
         <section id="classes" className="class-section">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Keynote: Internet of Things</h5>
-                <span class="badge badge-pill badge-info p-2">9:00am</span>
-              </div>
-              <p class="mb-1">NodeStradamus</p>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">React Basics</h5>
-                <span class="badge badge-pill badge-info p-2">10:00am</span>
-              </div>
-              <p class="mb-1">Vivianne McVue</p>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Hey, Mongo!</h5>
-                <span class="badge badge-pill badge-info p-2">11:00am</span>
-              </div>
-              <p class="mb-1">Jay Query</p>
-            </li>
-            <li class="list-group-item list-group-item-success">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Lunch</h5>
-                <span class="badge badge-pill badge-info p-2">12:00pm</span>
-              </div>
-              <p class="mb-1">Free pizza for everyone!</p>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Introducing ES2015</h5>
-                <span class="badge badge-pill badge-info p-2">1:00pm</span>
-              </div>
-              <p class="mb-1">Ecma Scriptnstuff</p>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Getting Started With Redux</h5>
-                <span class="badge badge-pill badge-info p-2">2:00pm</span>
-              </div>
-              <p class="mb-1">Robbie Redux</p>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">What's Babel?</h5>
-                <span class="badge badge-pill badge-info p-2">3:00pm</span>
-              </div>
-              <p class="mb-1">Json Babel</p>
-            </li>
-          </ul>
+          <header className="major" >
+            <h2 class="section-title">Clases</h2>
+          </header>
+          <Table striped bordered hover
+            style={{
+              textAlign: "center", fontFamily: 'Josefin Slab', fontWeight: "bold",
+            }}>
+            <thead>
+              <tr>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th colSpan="3">Mañana</th>
+              </tr>
+              <tr>
+                <td>9:00 - 10:15</td>
+                <td>9:00 - 10:15</td>
+                <td>9:00 - 10:15</td>
+              </tr>
+              <tr>
+                <th colSpan="3">Tarde</th>
+              </tr>
+              <tr>
+                <td>19:00 - 20:15</td>
+                <td>19:00 - 20:15</td>
+                <td>19:00 - 20:15</td>
+              </tr>
+            </tbody>
+          </Table>
         </section>
 
-        <section id="contact" className="class-section">
-          <div className="container">
-            <header className="major">
-              <h2>Contactar</h2>
-            </header>
-            <p>Sed lacus nascetur ac ante amet sapien.</p>
+        <section id="contact" className="contact-section">
+          <div class="contact-content">
+            <h1 class="contact-title">
+              Contactar
+            </h1>
+            <h2 class="contact-subtitle">
+              xxx-xxx-xxxx
+            </h2>
+            <h2 class="contact-subtitle">
+              name@domain.com
+            </h2>
           </div>
         </section>
 

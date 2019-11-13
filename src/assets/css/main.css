@@ -1,6 +1,29 @@
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
+
+
+@media all and (max-width:800px) 
+{
+   html{
+        display: block; 
+        float: none; 
+        width: 100%;
+   }
+}
+
+html {
+    scroll-padding-top: 80px; 
+  }
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: 300rem;
+    margin-bottom: 0;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+ }
+
 /*********** navigation ***********/
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
 #logo {
 	display: block;
@@ -20,7 +43,7 @@
 	right: 0;
 	height: 85px;
 	background: #fff;
-    z-index: 1;
+    z-index: 9;
     text-align: center;
     
 }
@@ -51,7 +74,6 @@
 .navigation nav a:hover,
 .navigation nav a.open {
 	color: #323232;
-	/*font-weight: bold;*/
 	text-shadow: 0 0 1px rgba(0,0,0,.5);
 }
 
@@ -61,14 +83,16 @@ body {
     margin: 0;
     padding: 0;
  }
+
  .hero {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
  }
+
  .hero::before {
     content: "";
     position: absolute;
@@ -82,21 +106,133 @@ body {
     background-position: center center;
     filter: brightness(70%);
  }
+
  .hero-content {
     position: relative;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Josefin Slab', serif;
     color: white;
     text-align: center;
     margin: 0.625rem;
  }
- .hero-title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 0;
- }
+
  .hero-subtitle {
     font-size: 2rem;
     font-weight: 200;
     margin-top: 1rem;
     text-align: center;
+    font-family: 'Josefin Slab', serif;
  }
+
+ .styles-header {
+    font-family: 'Josefin Slab', serif;
+    margin: 3rem;
+ }
+
+ .styles-hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-style: ridge;
+    text-align: center;
+  }
+
+  /******************* styles section **********************/
+
+.card-img {
+    width: 20vw;
+    height: 40vh;
+}
+
+.card-deck{
+    margin-bottom: 5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: black;
+    text-emphasis-color: black;
+}
+
+.card-body{
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+}
+
+.card-title{
+    font-size: 3rem;
+}
+
+/******************* about section **********************/
+#about{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: 'Josefin Slab', serif;
+    /* position: relative;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+ }
+
+ .img-container{
+    text-align: center;
+    display: block;
+  }
+
+  /* .about-text{
+    align-content: center;
+    display: block;
+    padding-left: 20px;
+    padding-right: 10px;
+  } */
+
+ .about-hr{
+    text-align: left;
+    width: 27%;
+    margin: 0 auto 0 0;
+    padding-bottom: 20px;
+ }
+
+ /******************* classes section **********************/
+
+ .classes-hr{
+    text-align: center;
+    width: 10%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+ }
+
+ /*********** contact ***********/
+ .contact-section {
+    margin-top: 6rem;
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/footer.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(70%);
+ }
+
+ .contact-content {
+    position: relative;
+    font-family: 'Josefin Slab', serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+ }
+
